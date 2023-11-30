@@ -15,11 +15,11 @@
   <div class="col-8" *ngIf="currentUser()">
     <h3>User</h3>
     <p>Email: {{ currentUser()?.email }}</p>
-    <p>Name: {{ currentUser()?.first_name }}</p>
+    <p>Name: {{ fullName() }}</p>
     <img [src]="currentUser()?.avatar" class="rounded" alt="avatar" />
   </div>
 
-  <div class="col-8 text-danger">
+  <div class="col-8 text-danger" *ngIf="!userWasFound()">
     <h3>User not found</h3>
   </div>
 </div>
