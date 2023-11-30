@@ -1,3 +1,30 @@
-<p>
-  propertiesPage works!
-</p>
+<h1>Mutations</h1>
+<hr />
+<div class="row">
+  <div class="col-6">
+    <input
+      #txtEmail
+      (input)="onFieldUpdated('email', txtEmail.value)"
+      class="form-control mb-2"
+      type="text"
+    />
+    <input
+      #txtFirstName
+      (input)="onFieldUpdated('first_name', txtFirstName.value)"
+      class="form-control mb-2"
+      type="text"
+    />
+    <input
+      #txtLastName
+      (input)="onFieldUpdated('last_name', txtLastName.value)"
+      class="form-control mb-2"
+      type="text"
+    />
+  </div>
+  <div class="col-6">
+    <!-- user data -->
+    <pre>
+      {{ "asd" }}
+    </pre>
+  </div>
+</div>
